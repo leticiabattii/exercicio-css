@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ex8.css">
+    <script src="ex8.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pokedex</h1>
+        <img class="imagem-pokemon" src="http://via.placeholder.com/150" alt="imagem do pokemon" id="imagem">
+        <div class="info-pokemon">
+            <p><strong>Nome:</strong><span id="nome">...</span></p>
+            <p><strong>Numero:</strong><span id="numero">...</span></p>
+            <p><strong>Tipo:</strong><span id="tipo">...</span></p>
+            <p><strong>Peso:</strong><span id="peso">---</span></p>
+            <p><strong>Altura:</strong><span id="altura">---</span></p>
+            <p><strong>Habilidades:</strong><span id="habilidades">---</span></p>
+            <p><strong>Estatísticas:</strong><span id="estatisticas">---</span></p>
+        </div>
+        <div class="area-busca">
+            <input type="text" id="entrada" placeholder="Digite nome ou numero do pokemon">
+            <button id="botao-buscar">Buscar</button>
+        </div>
+        <div id="erro" class="erro"></div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

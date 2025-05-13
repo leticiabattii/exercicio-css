@@ -1,0 +1,41 @@
+<!-- Exercicio5.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 5</title>
+  <style>
+    .formulario {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .formulario input, .formulario button {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .formulario button {
+      grid-column: span 2;
+      background-color: #28a745;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form class="formulario">
+    <input type="text" placeholder="Nome">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Telefone">
+    <input type="text" placeholder="Cidade">
+    <button>Enviar</button>
+  </form>
+</body>
+</html>

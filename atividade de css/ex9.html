@@ -1,0 +1,40 @@
+<!-- Exercicio9.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 9</title>
+  <style>
+    body.tema-claro {
+      background-color: white;
+      color: black;
+    }
+
+    body.tema-escuro {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo!</h1>
+  <button id="modoClaro">Modo Claro</button>
+  <button id="modoEscuro">Modo Escuro</button>
+
+  <script>
+    const modoClaro = document.getElementById("modoClaro");
+    const modoEscuro = document.getElementById("modoEscuro");
+
+    modoClaro.addEventListener("click", () => {
+      document.body.classList.add("tema-claro");
+      document.body.classList.remove("tema-escuro");
+    });
+
+    modoEscuro.addEventListener("click", () => {
+      document.body.classList.add("tema-escuro");
+      document.body.classList.remove("tema-claro");
+    });
+  </script>
+</body>
+</html>

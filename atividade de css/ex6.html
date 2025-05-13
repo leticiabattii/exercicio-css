@@ -1,0 +1,28 @@
+<!-- Exercicio6.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 6</title>
+  <style>
+    .lista-tarefas {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .lista-tarefas li::before {
+      content: "✓";
+      color: green;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="lista-tarefas">
+    <li>Estudar CSS</li>
+    <li>Praticar exercícios</li>
+    <li>Fazer um projeto</li>
+  </ul>
+</body>
+</html>
